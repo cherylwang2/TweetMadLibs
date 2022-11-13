@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"> -->
+    <link rel='stylesheet' href="{{url_for('static', filename = 'style.css')}}">
+    <meta name=author content="Victoria Quin, Cheryl Wang">
+    <title>WHACK2022 Submission</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+</head>
+
+
+
+<body>
+
+    <main>
+        <h1>Trump Tweet Madlibs!</h1>
+        <img id="welcome" src="static/welcome.gif" alt="welcome">
+        <img id="welcome-spider" src="static/gamecube.gif" alt="gamecube ad">
+        <img id="welcome-spider1" src="static/3g.gif" alt="phone ad">
+        <section id=introduction>
+            <h2>Introduction</h2>
+            <p>Ever wanted to experience tweeting something completely deranged? Look no further. 
+                
+                Why did we create this? Ask your mom.
+            </p>
+        </section>
+
+        <section>
+            <form class="fact-list" id="whack-form" method="POST">
+                <p><label>{{POS1}}: <input name="POS1"></label></p>
+                <p><label>{{POS2}}: <input name="POS2"></label></p>
+                <input type="hidden" name="text" value="{{text}}">
+                <p><button type="submit">Generate MADLIB</button></p>
+            </form>
+        </section>
+        <img id="grill" src="static/americabbq.gif" alt="bbq grill ad">
+        <img id="ad" src="static/ad.gif" alt="perl ad">
+        <script>
+            let ad = document.getElementById('ad')
+            let time = 1000 // time in milliseconds
+            ad.hidden = true // set img to hidden on load
+            setTimeout(() => {
+                ad.hidden = false // after timeout show img
+            }, time)
+        </script>
+
+        <section>
+            <h2>America!</h2>
+            <ul class="fact-list">
+                <li class="fact-list-element">
+                    <div class="fact">
+                        <img class="image-spider" src="static/candle.gif" alt="America candle">
+                    </div>
+                </li>
+
+                <li class="fact-list-element">
+                    <div class="fact">
+                        <img class="america" src="static/godblessamerica.gif" alt="god bless america">
+                        <img src="static/coffee.gif" alt="coffee dude">
+                    </div>
+                </li>
+                <li class="fact-list-element">
+                    <div class="fact">
+                        <img class="image-spider1" src="static/impeachbush.gif" alt="impeach Bush gif">
+                        <img class="america" src="static/godblessamericabanner.gif" alt="banner">
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 id="contact-section">Contact us!</h2>
+            <img id="email" src="static/email.gif" alt="two emailing computers">
+            <img id="status" src="static/repoffline.gif" alt="offline status">
+        </section>
+    
+
+    </main>
+
+    <footer>
+        <img src="static/ie.gif" alt="internet explorer notification">
+        <img src="static/iegif.gif" alt="internet explorer">
+    </footer>
+
+    
+
+</body>
+
+</html>

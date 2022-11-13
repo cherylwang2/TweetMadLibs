@@ -1,0 +1,175 @@
+body {
+    font-size: 12pt;
+    font-family:'Times New Roman', Times, serif;
+    color:red;
+    background-image: url('stars.gif');
+  }
+
+p{
+  background:white;
+  font-size: 14pt;
+  color:black;
+  display:block;
+  text-align:center;
+  padding:8px;
+}
+
+div p{
+  font-size:16pt;
+}
+
+section{
+  padding:30px;
+}
+
+h1, h2{
+  display:block;
+  text-align:center;
+}
+
+table{
+  background-color:white;
+  width:80%;
+  border: 4px solid blue;
+  border-spacing: 15px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+td{
+  border: 5px solid rgb(145, 241, 0);
+  padding: 15px;
+  text-align:center;
+}
+
+figcaption{
+  color:black;
+  font-size:16pt;
+  display:block;
+  padding: 20px;
+}
+
+span{
+  font-size: 32pt;
+  font-weight:bold;
+  display:block;
+  margin:50px;
+}
+
+
+#introduction{
+  display:block;
+  text-align:center;
+  margin:50px;
+  padding: 5px;
+  border: blue solid 10px;
+}
+
+#welcome{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#welcome-spider{
+  position:absolute;
+  top:10px;
+  left:10px;
+}
+
+#welcome-spider1{
+  position:absolute;
+  transform:scale(1.5);
+  top:60px;
+  right:70px;
+}
+
+#contact-section{
+  text-decoration:underline;
+}
+
+#email{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#back-button{
+  width:8%;
+  margin:50px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#error-message{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  border:blue double 5px;
+  padding:10px;
+  margin:50px;
+}
+
+#error-spider{
+  width:10%;
+  position:absolute;
+  right:350px;
+  top:20px;
+}
+
+#email-icon{
+  position:absolute;
+  left:450px;
+  top:40px;
+  transform:scale(1.5);
+}
+
+#construction{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+.tutorial-image{
+  width: 30%;
+}
+
+.fact-list{
+  border: 5px double blue; 
+}
+
+.fact{
+  background:white;
+  margin:40px;
+}
+.fact-1{
+  font-size:18pt;
+  font-weight:bold;
+  text-decoration:underline;
+  margin:20px;
+}
+
+.image-spider{
+  width:20%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+  bottom:20px;
+}
+
+.image-spider1{
+  width:10%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+  bottom:20px;
+}
+
+.fact-list-element{
+  margin:100px;
+  border: 2px dotted rgb(1, 206, 1);
+}
